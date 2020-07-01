@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rofi -modi drun,window -show drun \
+  -sidebar-mode -columns 2 \
+  -location 1 -yoffset 48 -xoffset 0 -width 35

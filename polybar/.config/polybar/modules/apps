@@ -1,0 +1,8 @@
+[module/apps]
+type = custom/text
+content = 
+content-padding = 2
+content-background = ${colors.shade1}
+content-foreground = ${colors.foreground}
+click-left = ~/.config/polybar/scripts/app_menu
+click-right = ~/.config/polybar/scripts/app_menu_i

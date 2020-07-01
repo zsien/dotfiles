@@ -1,0 +1,7 @@
+[bar/bottom]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 48
+
+tray-position = right
+tray-padding = 2

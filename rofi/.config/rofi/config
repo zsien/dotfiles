@@ -1,0 +1,18 @@
+rofi.modi: window,run,ssh,drun
+rofi.dpi: 192
+rofi.font: Noto Sans 12
+rofi.bw: 0
+rofi.padding: 20
+rofi.line-padding: 5
+rofi.show-icons: true
+rofi.icon-theme: Papirus
+! State:           bg,            fg,      bgalt,         hlbg,    hlfg
+rofi.color-normal: argb:00FFFFFF, #606060, argb:00FFFFFF, #2B8AC2, #FFFFFF
+rofi.color-urgent: argb:E6FFFFFF, #fdd835, argb:00FFFFFF, #2B8AC2, #FFFFFF
+rofi.color-active: argb:E6FFFFFF, #00897b, argb:00FFFFFF, #2B8AC2, #FFFFFF
+!                  background,    border,        separator
+rofi.color-window: argb:E6FFFFFF, argb:CCFFFFFF, argb:00FFFFFF
+
+rofi.display-drun: 應用
+rofi.display-window: 窗口
+

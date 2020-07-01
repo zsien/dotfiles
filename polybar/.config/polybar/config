@@ -1,0 +1,72 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[colors]
+transparent = #00000000
+white = #FFFFFF
+black = #000000
+
+background = #1F1F1F
+foreground = #FFFFFF
+foreground-alt = #A9ABB0
+
+acolor = #FFFFFF
+curgent = #EF5350
+coccupied = #42A5F5
+
+shade1 = #212121
+shade2 = #424242
+shade3 = #616161
+shade4 = #757575
+shade5 = #9E9E9E
+shade6 = #BDBDBD
+shade7 = #D4D4D4
+shade8 = #EEEEEE
+ashade8 = #2C2C2C
+
+red = #e53935
+pink = #d81b60
+purple = #8e24aa
+deep-purple = #5e35b1
+indigo = #3949ab
+blue = #1e88e5
+light-blue = #039be5
+cyan = #00acc1
+teal = #00897b
+green = #43a047
+light-green = #7cb342
+lime = #c0ca33
+yellow = #fdd835
+amber = #ffb300
+orange = #fb8c00
+deep-orange = #f4511e
+brown = #6d4c41
+grey = #757575
+blue-gray = #546e7a
+
+
+include-file = ~/.config/polybar/bars/top
+include-file = ~/.config/polybar/bars/bottom
+
+include-file = ~/.config/polybar/modules/apps
+include-file = ~/.config/polybar/modules/i3
+include-file = ~/.config/polybar/modules/volume
+include-file = ~/.config/polybar/modules/backlight
+include-file = ~/.config/polybar/modules/battery
+include-file = ~/.config/polybar/modules/date
+include-file = ~/.config/polybar/modules/powermenu
