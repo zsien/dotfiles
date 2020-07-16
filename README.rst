@@ -40,6 +40,7 @@ Debian
     zhihsian-lightdm-gtk-greeter
     rng-tools-debian
     x11-xserver-utils   # for xrandr
+    xdg-utils           # for xdg-open
     i3-gaps
     picom
     polybar
