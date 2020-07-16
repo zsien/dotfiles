@@ -48,7 +48,7 @@ Debian
     xfce4-terminal
     light-locker
     gnome-keyring
-    polseaudio
+    pulseaudio
     fonts-font-awesome
     feh
     redshift
