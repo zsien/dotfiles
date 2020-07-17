@@ -46,6 +46,7 @@ Debian
     polybar
     rofi
     dunst
+    network-manager
     xfce4-terminal
     light-locker
     gnome-keyring
