@@ -47,6 +47,8 @@ Debian
     rofi
     dunst
     network-manager
+    fcitx5
+    fcitx5-chinese-addons
     xfce4-terminal
     light-locker
     gnome-keyring
