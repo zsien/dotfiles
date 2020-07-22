@@ -49,6 +49,7 @@ Debian
     network-manager
     fcitx5
     fcitx5-chinese-addons
+    policykit-1-gnome
     xfce4-terminal
     light-locker
     gnome-keyring
