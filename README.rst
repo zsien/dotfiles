@@ -48,7 +48,7 @@ Debian
     dunst
     network-manager
     fcitx5
-    fcitx5-chinese-addons
+    fcitx5-rime
     policykit-1-gnome
     xfce4-terminal
     light-locker
