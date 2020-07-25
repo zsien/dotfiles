@@ -57,10 +57,10 @@ bindsym $mod+d exec rofi -show drun
 bindsym $mod+Tab exec rofi -show window
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -182,6 +182,8 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+bindsym $mod+l exec dbus-send --print-reply --system --dest=org.freedesktop.login1 /org/freedesktop/login1/session/self org.freedesktop.login1.Session.Lock
 
 # set inner/outer gaps
 gaps inner 10
