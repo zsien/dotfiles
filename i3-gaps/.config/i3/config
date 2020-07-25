@@ -212,5 +212,6 @@ exec --no-startup-id feh --randomize --bg-fill $HOME/圖片/壁紙
 exec --no-startup-id picom --experimental-backends -b
 exec --no-startup-id light-locker
 exec --no-startup-id fcitx5
+exec --no-startup-id redshift
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
