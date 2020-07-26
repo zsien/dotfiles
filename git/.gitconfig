@@ -4,4 +4,4 @@
 	name = Zhihsian Que
 	email = i@zhihsian.me
 [pull]
-	rebase = false
+	rebase = true
