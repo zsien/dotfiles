@@ -33,6 +33,9 @@ fpath=(
   $fpath
 )
 
+bindkey "^[[1;5C" forward-word  # Ctrl + 左方向鍵移動到上一個詞前
+bindkey "^[[1;5D" backward-word # Ctrl + 右方向鍵移動到下一個詞前
+
 # pure prompt
 autoload -U promptinit && promptinit
 prompt pure
