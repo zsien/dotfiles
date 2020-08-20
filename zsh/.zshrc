@@ -57,5 +57,8 @@ source /usr/local/share/zsh-users/zsh-history-substring-search/zsh-history-subst
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 
+export EDITOR=vim
+export VISUAL=vim
+
 alias ls='ls --group-directories-first --color=auto'
 alias rm='rm -i'
