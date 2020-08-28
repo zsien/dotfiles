@@ -9,7 +9,7 @@ setopt hist_ignore_space
 
 eval $(dircolors)
 
-if [[ $UID == 0 ]]; then
+if [[ $UID != 0 ]]; then
   path=(
     $HOME/bin
     $HOME/.cargo/bin
