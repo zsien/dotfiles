@@ -11,7 +11,7 @@ eval $(dircolors)
 
 if [[ $UID != 0 ]]; then
   path=(
-    $HOME/bin
+    $HOME/.local/bin
     $HOME/.cargo/bin
     $HOME/go/bin
     $HOME/go/bins
