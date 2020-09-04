@@ -40,7 +40,7 @@ bindkey "^[[1;5D" backward-word # Ctrl + 右方向鍵移動到下一個詞前
 autoload -U promptinit && promptinit
 prompt pure
 prompt_newline='%666v'
-PROMPT=' %(?.%F{$prompt_pure_colors[prompt:success]}.%F{$prompt_pure_colors[prompt:error]})${prompt_pure_state[prompt]}%f '
+PROMPT=" $PROMPT"
 
 if [[ $UID == 0 || $EUID == 0 ]]; then
   # root
