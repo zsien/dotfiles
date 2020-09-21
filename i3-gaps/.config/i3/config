@@ -190,11 +190,11 @@ gaps inner 10
 gaps outer -10
 
 # disable border
-new_window none
-new_float none
+default_border none
+default_floating_border none
 
-for_window [workspace=2] layout tabbed
-for_window [workspace=3] layout tabbed
+workspace_layout tabbed
+for_window [workspace=1] layout default
 
 # assign applications to workspace
 assign [class="Xfce4-terminal"] 1
