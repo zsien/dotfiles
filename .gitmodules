@@ -1,0 +1,3 @@
+[submodule "fcitx5-rime/.local/share/fcitx5/rime"]
+	path = fcitx5-rime/.local/share/fcitx5/rime
+	url = ../rime-config.git
