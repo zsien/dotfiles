@@ -9,16 +9,27 @@ setopt hist_ignore_space
 
 eval $(dircolors)
 
+path=(
+  /usr/local/{bin,sbin}
+  /usr/{bin,sbin}
+  /{bin,sbin}
+  $path
+)
+
 if [[ $UID != 0 ]]; then
   path=(
     $HOME/.local/bin
     $HOME/.cargo/bin
     $HOME/go/bin
-    $HOME/go/bins
+    /usr/local/{bin,sbin}
+    /usr/{bin,sbin}
+    /{bin,sbin}
     $path
   )
-
 fi
+
+# deduplication
+typeset -aU path
 
 if [ $(command -v rustc >> /dev/null) ]; then
   fpath=(
