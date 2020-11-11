@@ -58,6 +58,8 @@ if [[ $UID == 0 || $EUID == 0 ]]; then
   PURE_PROMPT_SYMBOL="#"
 fi
 
+# turn on git stash status
+zstyle :prompt:pure:git:stash show yes
 
 # completions
 zstyle ':completion:*' menu select
