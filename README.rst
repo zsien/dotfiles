@@ -49,6 +49,7 @@ Debian
     network-manager
     fcitx5
     fcitx5-rime
+    fcitx5-material-color
     policykit-1-gnome
     xfce4-terminal
     light-locker
