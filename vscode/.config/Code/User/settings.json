@@ -36,7 +36,8 @@
         "--compile-commands-dir=${workspaceFolder}/build",
         "--background-index",
         "--clang-tidy",
+        "--header-insertion=never",
         "--log=verbose",
         "--pretty",
-    ]
+    ],
 }
