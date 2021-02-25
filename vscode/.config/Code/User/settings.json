@@ -40,4 +40,5 @@
         "--log=verbose",
         "--pretty",
     ],
+    "clangd.onConfigChanged": "restart",
 }
