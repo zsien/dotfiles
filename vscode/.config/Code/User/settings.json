@@ -41,4 +41,5 @@
         "--pretty",
     ],
     "clangd.onConfigChanged": "restart",
+    "go.useLanguageServer": true,
 }
