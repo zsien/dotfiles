@@ -50,6 +50,12 @@
             ]
         },
         {
+            "name": "htxelatex",
+            "tools": [
+                "htxelatex"
+            ]
+        },
+        {
             "name": "pdflatex",
             "tools": [
                 "pdflatex"
@@ -84,6 +90,18 @@
                 "-file-line-error",
                 "-shell-escape",
                 "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "htxelatex",
+            "command": "htxelatex",
+            "args": [
+                "%DOC%",
+                "xhtml,html5,charset=utf-8",
+                " -cmozhtf -utf8",
+                "",
+                " -shell-escape",
             ],
             "env": {}
         },
