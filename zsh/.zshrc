@@ -43,6 +43,14 @@ zstyle :prompt:pure:git:stash show yes
 # completions
 zstyle ':completion:*' menu select
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
+
+if [ "$platform" = 'linux' ]; then
+  zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+else
+  zstyle ':completion:*:kill:*' command 'ps -U $USER -o pid,%cpu,tty,cputime,command'
+fi
+
 autoload -U compinit && compinit
 
 source /usr/local/share/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
