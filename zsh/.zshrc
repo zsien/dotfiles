@@ -10,41 +10,6 @@ setopt INC_APPEND_HISTORY     # immediately append to the history file
 
 eval $(dircolors)
 
-path=(
-  /usr/local/{bin,sbin}
-  /usr/{bin,sbin}
-  /{bin,sbin}
-  $path
-)
-
-if [[ $UID != 0 ]]; then
-  path=(
-    $HOME/.local/bin
-    $HOME/.cargo/bin
-    $HOME/go/bin
-    /usr/local/{bin,sbin}
-    /usr/{bin,sbin}
-    /{bin,sbin}
-    $path
-  )
-fi
-
-# deduplication
-typeset -aU path
-
-if [ $(command -v rustc >> /dev/null) ]; then
-  fpath=(
-    $(rustc --print sysroot)/share/zsh/site-functions
-    $fpath
-  )
-fi
-
-fpath=(
-  /usr/local/share/zsh-pure
-  /usr/local/share/zsh-users/zsh-completions/src
-  $fpath
-)
-
 bindkey "^[[1;5C" forward-word  # Ctrl + 左方向鍵移動到上一個詞前
 bindkey "^[[1;5D" backward-word # Ctrl + 右方向鍵移動到下一個詞前
 
