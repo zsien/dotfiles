@@ -19,11 +19,11 @@ Debian
     exit
 
     # 安裝 keyring
-    wget https://repo.zhihsian.me/debian/pool/main/z/zhihsian-keyring/zhihsian-keyring_2019.12.26_all.deb
-    sudo apt install ./zhihsian-keyring_2019.12.26_all.deb
+    wget https://repo.zsien.tech/debian/pool/main/z/zsien-keyring/zsien-keyring_2021.05.25_all.deb
+    sudo apt install ./zsien-keyring_2021.05.25_all.deb
 
     # 配置源
-    echo 'deb https://repo.zhihsian.me/debian sid main zhihsian' | sudo tee /etc/apt/sources.list.d/zhihsian.list
+    echo 'deb https://repo.zsien.tech/debian sid main zsien' | sudo tee /etc/apt/sources.list.d/zsien.list
 
     # 安裝 systemd-boot
     sudo bootctl install
