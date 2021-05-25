@@ -4,6 +4,8 @@ if [ "$unamestr" = 'Linux' ]; then
   platform='linux'
 elif [ "$unamestr" = 'FreeBSD' ]; then
   platform='freebsd'
+elif [ "$unamestr" = 'Darwin' ]; then
+  platform='darwin'
 fi
 
 HISTFILE=$HOME/.zsh_history
@@ -67,7 +69,7 @@ export VISUAL=vim
 
 if [ "$platform" = 'linux' ]; then
   alias ls='ls --group-directories-first --color=auto'
-elif [ "$platform" = 'freebsd' ]; then
+elif [ "$platform" = 'freebsd' -o "$platform" = 'darwin' ]; then
   alias ls='ls -G'
 fi
 
