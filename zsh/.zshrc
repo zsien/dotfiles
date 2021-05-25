@@ -45,6 +45,7 @@ zstyle :prompt:pure:git:stash show yes
 # completions
 zstyle ':completion:*' menu select
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' show-completer true  # show message while waiting for completion
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 
 if [ "$platform" = 'linux' ]; then
