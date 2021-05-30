@@ -34,29 +34,25 @@ Debian
     sudo apt install amd64-microcode
 
     # 安裝以下包
-    zhihsian-x11-common
-    zhihsian-noto
-    zhihsian-lightdm-hidpi
-    zhihsian-lightdm-gtk-greeter
+    zsien-fontconfig
     rng-tools-debian
-    x11-xserver-utils   # for xrandr
     xdg-utils           # for xdg-open
-    i3-gaps
-    picom
-    polybar
-    rofi
-    dunst
+    libglib2.0-bin      # for gsettings
+    sway
+    xwayland
+    qtwayland5          # for Qt wayland
+    swayidle
+    waybar
+    wofi
+    mako-notifier
     network-manager
     fcitx5
-    fcitx5-rime
+    fcitx5-chinese-addons
     fcitx5-material-color
     policykit-1-gnome
     xfce4-terminal
-    light-locker
     gnome-keyring
     fonts-font-awesome
-    feh
-    redshift
     firefox-l10n-zh-tw
 
     # pipewire
@@ -77,14 +73,13 @@ Debian
     sudo cp /usr/share/doc/pipewire/examples/ld.so.conf.d/pipewire-jack-*.conf /etc/ld.so.conf.d/
     sudo ldconfig
 
-    # 安裝 GTK 主題
+    # 安裝並設置 GTK 主題和圖標
     sudo apt install materia-gtk-theme papirus-icon-theme
+    gsettings set org.gnome.desktop.interface icon-theme 'Papirus'
+    gsettings set org.gnome.desktop.interface gtk-theme 'Materia-compact'
 
     # 安裝 tlp
     sudo apt install tlp
 
     # 安裝音樂客戶端
     sudo apt install rhythmbox
-
-    # 安裝並設置 redshift
-    sudo apt install redshift

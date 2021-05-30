@@ -1,0 +1,15 @@
+# Indicator
+ignore-empty-password
+indicator-caps-lock
+
+# Behavior
+show-failed-attempts
+
+color=2D2D2D
+key-hl-color=97a871
+ring-color=282828
+ring-wrong-color=282828
+ring-ver-color=282828
+inside-wrong-color=ba4b29
+inside-color=000000
+inside-ver-color=8a8a8a
