@@ -1,0 +1,19 @@
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
+export MOZ_ENABLE_WAYLAND=1
+export QT_QPA_PLATFORM=wayland
+export CLUTTER_BACKEND=wayland
+export SDL_VIDEODRIVER=wayland
+
+if [ -x "/usr/bin/dbus-update-activation-environment" ]; then
+  # tell dbus-daemon --session (and systemd --user, if running)
+  # to put a minimal subset of the Xsession's environment in activated
+  # services' environments
+  dbus-update-activation-environment --verbose --systemd \
+    WAYLAND_DISPLAY MOZ_ENABLE_WAYLAND QT_QPA_PLATFORM CLUTTER_BACKEND SDL_VIDEODRIVER
+fi
+
+eval $(gnome-keyring-daemon --start)
+export SSH_AUTH_SOCK

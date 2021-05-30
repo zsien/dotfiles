@@ -1,0 +1,4 @@
+allow_images = true
+allow_markup = true
+content_halign = true
+key_expand = Alt_L
