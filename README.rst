@@ -54,11 +54,28 @@ Debian
     xfce4-terminal
     light-locker
     gnome-keyring
-    pulseaudio
     fonts-font-awesome
     feh
     redshift
     firefox-l10n-zh-tw
+
+    # pipewire
+    sudo apt install pulseaudio
+    sudo systemctl --global mask pulseaudio.socket
+    sudo systemctl --global mask pulseaudio.service
+
+    sudo apt install pipewire libspa-0.2-bluetooth libspa-0.2-jack pipewire-audio-client-libraries
+
+    sudo touch /etc/pipewire/media-session.d/with-pulseaudio
+    sudo cp /usr/share/doc/pipewire/examples/systemd/user/pipewire-pulse.* /etc/systemd/user/
+    sudo systemctl --global enable pipewire pipewire-pulse
+
+    sudo touch /etc/pipewire/media-session.d/with-alsa
+    sudo cp /usr/share/doc/pipewire/examples/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d/
+
+    sudo touch /etc/pipewire/media-session.d/with-jack
+    sudo cp /usr/share/doc/pipewire/examples/ld.so.conf.d/pipewire-jack-*.conf /etc/ld.so.conf.d/
+    sudo ldconfig
 
     # 安裝 GTK 主題
     sudo apt install materia-gtk-theme papirus-icon-theme
