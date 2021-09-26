@@ -1,7 +1,5 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-	name = Zhihsian Que
-	email = i@zhihsian.me
-[pull]
-	rebase = true
+	name = zsien
+	email = i@zsien.cn
