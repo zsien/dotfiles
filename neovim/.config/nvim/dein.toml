@@ -1,0 +1,7 @@
+# Let dein manage dein
+# Required:
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
