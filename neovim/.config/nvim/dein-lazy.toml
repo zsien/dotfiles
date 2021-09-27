@@ -25,3 +25,15 @@ hook_source = '''
         \ '_'                : '-xelatex',
         \}
 '''
+
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+
+[[plugins]]
+repo = 'aklt/plantuml-syntax'
+on_ft = ['puml', 'plantuml']
+
+[[plugins]]
+repo = 'weirongxu/plantuml-previewer.vim'
+depends = ['open-browser.vim']
+on_ft = ['puml', 'plantuml']
