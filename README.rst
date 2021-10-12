@@ -38,6 +38,8 @@ Debian
     rng-tools-debian
     xdg-utils           # for xdg-open
     libglib2.0-bin      # for gsettings
+    greetd
+    gtkgreet
     sway
     xwayland
     qtwayland5          # for Qt wayland
