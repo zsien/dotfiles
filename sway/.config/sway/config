@@ -222,10 +222,14 @@ for_window [app_id="telegramdesktop"] move window to workspace 4
 
 bindsym $mod+l exec $lock
 
+# Toggle Gammastep
+bindsym $mod+Shift+t exec pkill -USR1 gammastep
+
 exec swayidle -w \
          timeout 300 $lock \
          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
          before-sleep $lock
+exec gammastep -l 30:114
 exec --no-startup-id fcitx5 -d
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 
