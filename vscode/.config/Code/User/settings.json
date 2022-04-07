@@ -26,6 +26,8 @@
             ]
         }
     ],
+    "mesonbuild.buildFolder": "build",
+    "mesonbuild.configureOnOpen": true,
     "cmake.configureOnOpen": true,
     "cmake.buildDirectory": "${workspaceFolder}/build/${buildKit}/${buildType}",
     "cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",
