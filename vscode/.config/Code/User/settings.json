@@ -52,6 +52,12 @@
             ]
         },
         {
+            "name": "lualatex",
+            "tools": [
+                "lualatex"
+            ]
+        },
+        {
             "name": "htxelatex",
             "tools": [
                 "htxelatex"
@@ -70,6 +76,15 @@
                 "bibtex",
                 "xelatex",
                 "xelatex"
+            ]
+        },
+        {
+            "name": "lualatex ➞ bibtex ➞ lualatex × 2",
+            "tools": [
+                "lualatex",
+                "bibtex",
+                "lualatex",
+                "lualatex"
             ]
         },
         {
@@ -94,6 +109,20 @@
                 "%DOC%"
             ],
             "env": {}
+        },
+        {
+            "name": "lualatex",
+            "command": "lualatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-shell-escape",
+                "%DOC%"
+            ],
+            "env": {
+                "PLANTUML_JAR": "/usr/share/plantuml/plantuml.jar"
+            }
         },
         {
             "name": "htxelatex",
