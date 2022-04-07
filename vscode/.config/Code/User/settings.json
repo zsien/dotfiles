@@ -1,4 +1,5 @@
 {
+    "window.titleBarStyle": "custom",
     "editor.renderWhitespace": "all",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
