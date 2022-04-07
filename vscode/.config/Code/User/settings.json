@@ -158,4 +158,5 @@
         },
     ],
     "latex-workshop.view.pdf.viewer": "tab",
+    "tabnine.experimentalAutoImports": true,
 }
