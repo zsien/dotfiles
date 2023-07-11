@@ -33,9 +33,9 @@
     "cmake.buildDirectory": "${workspaceFolder}/build/${buildKit}/${buildType}",
     "cmake.installPrefix": "${workspaceFolder}/build/out",
     "cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",
-    "C_Cpp.intelliSenseEngine": "Disabled",
-    "C_Cpp.autocomplete": "Disabled",
-    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp.autocomplete": "disabled",
+    "C_Cpp.errorSquiggles": "disabled",
     "clangd.arguments": [
         "--compile-commands-dir=${workspaceFolder}/build",
         "--background-index",
