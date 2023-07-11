@@ -31,6 +31,7 @@
     "mesonbuild.configureOnOpen": true,
     "cmake.configureOnOpen": true,
     "cmake.buildDirectory": "${workspaceFolder}/build/${buildKit}/${buildType}",
+    "cmake.installPrefix": "${workspaceFolder}/build/out",
     "cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",
     "C_Cpp.intelliSenseEngine": "Disabled",
     "C_Cpp.autocomplete": "Disabled",
